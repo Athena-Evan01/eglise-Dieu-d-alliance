@@ -21,9 +21,9 @@ Le backend sera fait uniquement quand tout le monde confirmera avoir télécharg
 
 ## Installation du projet
 1. **Cloner le dépôt et se déplacer dans le dossier :**
-   ```bash
-git clone https://github.com/semkasanga/eglise-Dieu-d-alliance.git
+   ```bash git clone https://github.com/semkasanga/eglise-Dieu-d-alliance.git
 cd eglise-Dieu-d-alliance
+
 ```
 
 2. **Installer les dépendances PHP :**
