@@ -4,17 +4,16 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MembreController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/membres', [MembreController::class, 'index'])->name('membres.index');
-Route::get('/membres/create', [MembreController::class, 'create'])->name('membres.create');
-Route::get('/membres/{id}', [MembreController::class, 'show'])->name('membres.show');
-// interface Dashboard de gestion de membre
-Route::get('/backoffice/gestion-membre/dashboard', function () {
-    return view('backoffice.gestion-membre.dashboard');
-})->name('backoffice.dashboard');
+// Dashboard de gestion de membre
+Route::get('/backoffice/gestion-membre/dashboard', [MembreController::class, 'dashboard'])->name('backoffice.dashboard');
+
+
+// Gestion des Membres
+Route::get('/backoffice/gestion-membre/membres-list', [MembreController::class, 'index'])->name('backoffice.membres-list');
+Route::get('/backoffice/gestion-membre/create', [MembreController::class, 'create'])->name('membres.create');
+Route::get('/backoffice/gestion-membre/{id}', [MembreController::class, 'show'])->name('membres.show');
+
 
 /*Route::get('/dashboard', function () {
     return view('dashboard');

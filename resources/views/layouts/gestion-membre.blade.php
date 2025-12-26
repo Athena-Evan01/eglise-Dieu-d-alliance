@@ -75,7 +75,7 @@
                     </li>
 
                     <li>
-                        <a href="#"
+                        <a href="{{ url('/backoffice/gestion-membre/membres-list') }}"
                             class="group flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 {{ request()->is('*liste') ? 'bg-indigo-600 text-white shadow-md shadow-indigo-100' : 'text-gray-600 hover:bg-indigo-50 hover:text-indigo-600' }}">
                             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
